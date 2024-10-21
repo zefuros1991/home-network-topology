@@ -11,7 +11,7 @@ The home network is structured to have critical devices with static IPs for easy
    - Role: Main device running most containers (Home Assistant, AdGuard, SSH, VPN)
    - Static IP: `xxx.xxx.xxx.10` (Replace with your own IP)
 2. **Laptop (Windows & Ubuntu)**
-   - Role: Backup for the PC, capable of running containers in case of failure
+   - Role: Backup for the PC, capable of running containers in case of failure, and remote access to the network for configuration and deployment.
    - Static IP: Windows: `xxx.xxx.xxx.20`, Ubuntu: `xxx.xxx.xxx.30` (Replace with your own IP)
 3. **Android Phone**
    - Role: Monitoring and media consumption, SSH access to the server
@@ -34,7 +34,7 @@ This project uses various tools and services to provide functionalities like ad-
 
 1. **Change Default Credentials**: Never use default usernames or passwords for any service.
 2. **Custom Ports**: Use non-standard ports for services to minimize exposure to attacks.
-3. **Redundancy**: Services like DHCP and VPN should be able to switch between devices (PC, laptop, cloud) to ensure uptime.
+3. **Redundancy**: Services like DHCP and VPN should be able to switch automatically between devices (PC, laptop,or hosted on cloud) to ensure uptime.
 
 ## License
 
